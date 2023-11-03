@@ -55,6 +55,14 @@ internal class DefaultsSyncer {
                                                    name: UserDefaults.didChangeNotification)
     }
 
+    internal func forcePull() {
+        iCloudDefaultsDidUpdate()
+    }
+
+    internal func forcePush() {
+        localDefaultsDidUpdate()
+    }
+    
     internal func forceSync() {
         iCloudDefaultsDidUpdate()
         localDefaultsDidUpdate()
