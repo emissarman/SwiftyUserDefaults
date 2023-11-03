@@ -40,6 +40,14 @@ public extension DefaultsAdapter {
         syncer.forceSync()
     }
 
+    func forcePull() {
+        syncer.forcePull()
+    }
+
+    func forcePush() {
+        syncer.forcePush()
+    }
+
     func stopSyncingAll() {
         syncer.syncedKeys = []
     }
